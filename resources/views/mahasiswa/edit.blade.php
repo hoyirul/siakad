@@ -25,6 +25,10 @@
             <input type="text" name="Nim" class="form-control" id="Nim" value="{{ $Mahasiswa->nim }}" aria-describedby="Nim" >
           </div>
           <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="text" name="Email" class="form-control" value="{{ $Mahasiswa->email }}" id="Email" aria-describedby="Email" >
+          </div>
+          <div class="form-group">
             <label for="Nama">Nama</label>
             <input type="text" name="Nama" class="form-control" id="Nama" value="{{ $Mahasiswa->nama }}" aria-describedby="Nama" >
           </div>
@@ -35,6 +39,14 @@
           <div class="form-group">
             <label for="Jurusan">Jurusan</label> 
             <input type="Jurusan" name="Jurusan" class="form-control" id="Jurusan" value="{{ $Mahasiswa->jurusan }}" aria-describedby="Jurusan" >
+          </div>
+          <div class="form-group">
+            <label for="Alamat">Alamat</label>
+            <textarea name="Alamat" class="form-control">{{ $Mahasiswa->alamat }}</textarea>
+          </div>
+          <div class="form-group">
+            <label for="Lahir">Lahir</label>
+            <input type="date" name="Lahir" class="form-control" id="Lahir" ariadescribedby="Lahir" value="{{ $Mahasiswa->tanggal_lahir }}">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>

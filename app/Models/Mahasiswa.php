@@ -13,8 +13,11 @@ class Mahasiswa extends Model
     protected $primaryKey = 'id_mahasiswa';
     protected $fillable = [
         'Nim',
+        'Email',
         'Nama',
         'Kelas',
         'Jurusan',
+        'Alamat',
+        'Lahir',
     ]; 
 }

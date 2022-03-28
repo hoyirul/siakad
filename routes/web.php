@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::resource('mahasiswa', MahasiswaController::class);
+Route::get('/page', [MahasiswaController::class, 'page']);
+Route::get('/search', [MahasiswaController::class, 'search']);
