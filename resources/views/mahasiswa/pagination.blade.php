@@ -47,7 +47,7 @@
         <td>{{ $mhs->nim }}</td>
         <td>{{ $mhs->email }}</td>
         <td>{{ $mhs->nama }}</td>
-        <td>{{ $mhs->kelas }}</td>
+        <td>{{ $mhs->kelas->nama_kelas }}</td>
         <td>{{ $mhs->jurusan }}</td>
         <td>{{ $mhs->alamat }}</td>
         <td>{{ $mhs->tanggal_lahir }}</td>

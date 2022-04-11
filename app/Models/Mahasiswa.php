@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Kelas;
 
 class Mahasiswa extends Model
 {
@@ -20,4 +21,8 @@ class Mahasiswa extends Model
         'Alamat',
         'Lahir',
     ]; 
+
+    public function kelas(){
+        return $this->belongsTo(Kelas::class);
+    }
 }
