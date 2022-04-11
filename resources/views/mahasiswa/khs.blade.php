@@ -28,7 +28,19 @@
           <td>{{ $row->matakuliah->nama_matkul }}</td>
           <td>{{ $row->matakuliah->sks }}</td>
           <td>{{ $row->matakuliah->semester }}</td>
-          <td>{{ $row->nilai }}</td>
+          <td>
+            @if ($row->nilai <= 100 && $row->nilai >= 85)
+              A
+            @elseif ($row->nilai <= 84 && $row->nilai >= 75)
+              B
+            @elseif ($row->nilai <= 74 && $row->nilai >= 60)
+              C
+            @elseif ($row->nilai <= 59 && $row->nilai >= 48)
+              D
+            @else
+              E
+            @endif
+          </td>
         </tr>
       @endforeach
     @else
