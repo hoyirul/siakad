@@ -18,6 +18,7 @@ class Mahasiswa extends Model
         'Nama',
         'Kelas',
         'Jurusan',
+        'userfile',
         'Alamat',
         'Lahir',
     ]; 

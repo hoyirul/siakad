@@ -36,6 +36,7 @@
     <th>Nama</th>
     <th>Kelas</th>
     <th>Jurusan</th>
+    <th>Profile</th>
     <th>Alamat</th>
     <th>Tanggal Lahir</th>
     <th width="280px">Action</th>
@@ -48,6 +49,7 @@
         <td>{{ $mhs->nama }}</td>
         <td>{{ $mhs->kelas->nama_kelas }}</td>
         <td>{{ $mhs->jurusan }}</td>
+        <td><img style="width: 80px; height: 80px; overflow: hidden" class="rounded-circle" src="{{ asset('./storage/'. $mhs->photo_profile) }}" alt=""></td>
         <td>{{ $mhs->alamat }}</td>
         <td>{{ $mhs->tanggal_lahir }}</td>
         <td>
