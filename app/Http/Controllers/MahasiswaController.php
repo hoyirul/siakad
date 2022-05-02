@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
 use App\Models\Kelas;
 use App\Models\Mahasiswa_MataKuliah;
+use Illuminate\Support\Facades\Storage;
 use PDF;
 
 class MahasiswaController extends Controller
